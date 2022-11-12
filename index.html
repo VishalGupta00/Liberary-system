@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="icons/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" />
+  <link rel="stylesheet" href="index.css" />
+  <!-- <script defer src="./js/typewriterEffect.js"></script> -->
+  <script defer src="./js/bookSearch.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/ee27ae787a.js" crossorigin="anonymous"></script>
+  <title>BookCase</title>
+</head>
+
+<body class="day">
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <a class="navbar-brand navTitle" href="index.html">
+      <img height="10%" width="20%" src="icons/book.png">
+      Library
+    </a>
+    <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+      class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span
+        class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item itemNav">
+          <a class="nav-link" href="#header">Home</a>
+        </li>
+        <li class="nav-item itemNav">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  </div>
+  </div><!-- Gallery  -->
+  <div id="gallery-title"></div>
+  <div class="gallery-div" id="">
+    <h1 class="gallery-head day" id="gallery1">
+      Book Gallery
+    </h1>
+  </div>
+
+  <!-- Search Bar start -->
+  <div class="input-group">
+    <div class="form-outline ml-5 ml-5w-50">
+      <input id="search-input" type="search" class="form-control text-center" placeholder="Search Book "
+        onkeyup="if (event.keyCode == 13) { titleSearch(),authorSearch(),publishedSearch(); return false; }" />
+      <!-- keyCode 13 is Enter key here -->
+      <span id="search-result"></span>
+    </div>
+  </div>
+  <!-- Search Bar end -->
+
+  <section id="gallery">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img alt="RDPD" class="card-img-top" src="https://m.media-amazon.com/images/I/81bsw6fnUiL.jpg">
+            <div class="card-body">
+              <h5 class="card-title">Rich Dad Poor Dad </h5><h6 class="card-author font-bold mb-3">(Robert Kiyosaki<a class="card-published ml-2">1997 )</a></h6> 
+              <div>
+                <p class="card-text">Rich Dad Poor Dad is a 1997 book written by Robert T. Kiyosaki and Sharon Lechter.
+                  It
+                  advocates the importance of financial literacy, financial independence and building wealth through
+                  investing in assets, real estate investing, starting and owning businesses, as well as increasing
+                  one's
+                  financial intelligence.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img class="card-img-top" src="https://m.media-amazon.com/images/I/71X1p4TGlxL.jpg" alt="" />
+            <div class="card-body">
+              <div>
+                <h5 class="card-title">The Lost Symbol</h5><h6 class="card-author font-bold mb-3">(Dan Brown<a class="card-published ml-2">2009)</a></h6>
+                <p class="card-text">The Lost Symbol is best-selling author Dan Brown's third thriller novel following
+                  the
+                  life of symbologist Robert Langdon as he works to solve the mystery behind the disappearance of his
+                  mentor, Peter Solomon, whose severed hand is found in the Capitol Building in Washington DC during a
+                  Smithsonian fundraiser.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img class="card-img-top" src="https://m.media-amazon.com/images/I/91y5XODFZ+L.jpg" alt="" />
+            <div class="card-body">
+              <h5 class="card-title">The Diary of a young girl</h5><h6 class="card-author font-bold mb-3">(Anne Frank<a class="card-published ml-2">1947)</a></h6>
+              <p class="card-text">The Diary of a Young Girl, also known as The Diary of Anne Frank, is a book of the
+                writings from the Dutch-language diary kept by Anne Frank while she was in hiding for two years with her
+                family during the Nazi occupation of the Netherlands. Anne Frank died of typhus in the Bergen-Belsen
+                concentration camp in 1945. </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img class="card-img-top" src="https://images-na.ssl-images-amazon.com/images/I/61kO3GprMnL.jpg" alt="" />
+            <div class="card-body">
+              <h5 class="card-title">Angels and Demons</h5><h6 class="card-author font-bold mb-3">(Dan Brown<a class="card-published ml-2">2000)</a></h6>
+              <p class="card-text">Angels & Demons is a 2000 bestselling mystery-thriller novel written by American
+                author Dan Brown and published by Pocket Books. Angels & Demons shares many stylistic literary elements
+                with its sequels, such as conspiracies of secret societies, a single-day time frame, and the Catholic
+                Church. Ancient history, architecture, and symbology are also heavily referenced throughout the book.
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img alt="RDPD" class="card-img-top"
+              src="https://m.media-amazon.com/images/I/51mN3bY0JjL._SX332_BO1,204,203,200_.jpg">
+            <div class="card-body">
+              <div>
+                <h5 class="card-title">The Subtle Art of Not Giving a F*ck</h5><h6 class="card-author font-bold mb-3">(Mark Manson<a class="card-published ml-2">2019)</a></h6>
+                <p class="card-text">The Subtle Art of Not Giving a F**k is his antidote to the coddling,
+                  let’s-all-feel-good mindset that has infected modern society and spoiled a generation,
+                  rewarding them with gold medals just for showing up.</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img alt="New Moon" class="card-img-top" src="https://m.media-amazon.com/images/I/81rpWBnoCBL.jpg">
+            <div class="card-body">
+              <h5 class="card-title">New Moon</h5><h6 class="card-author font-bold mb-3">(New Moon<a class="card-published ml-2">2006 )</a></h6>
+              <p class="card-text">New Moon (novel) New Moon (stylized as new moon) is a 2006 romantic fantasy novel
+                by author Stephenie Meyer, and is the second novel in the Twilight series.
+                The novel continues the story of Bella Swan and vampire Edward Cullen 's relationship.</p>
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img alt="Alchemist" class="card-img-top" src="https://m.media-amazon.com/images/I/71aFt4+OTOL.jpg">
+            <div class="card-body">
+              <div>
+                <h5 class="card-title">The Alchemist</h5><h6 class="card-author font-bold mb-3">(Panlo Coelho<a class="card-published ml-2">1988)</a></h6>
+                <p class="card-text">The Alchemist is a novel by Brazilian author Paulo Coelho which was first published
+                  in 1988. Originally written in Portuguese, it became a widely translated international bestseller.</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img class="card-img-top" src="https://m.media-amazon.com/images/I/51-uspgqWIL._AC_SY780_.jpg"
+              alt="Atomic Habits" />
+            <div class="card-body">
+              <h5 class="card-title">Atomic Habits</h5><h6 class="card-author font-bold mb-3">(James clear<a class="card-published ml-2">2018)</a></h6>
+              <p class="card-text">
+                of the best books, I have ever read. Concluding this, then this book taught me
+                how small changes can change your life.</p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img class="card-img-top" src="https://m.media-amazon.com/images/I/410ruFcxtmL._SX324_BO1,204,203,200_.jpg"
+              alt="" />
+            <div class="card-body">
+              <div>
+                <h5 class="card-title">Grapes of Wrath</h5><h6 class="card-author font-bold mb-3">(John Steinbeck<a class="card-published ml-2">1940)</a></h6>
+                <p class="card-text">The Grapes of Wrath is considered by many to be the Great American Novel. It won
+                  the
+                  Pulitzer Prize in 1940, the National Book Award in 1939, and was cited as one of the primary reasons
+                  for
+                  Steinbeck's Nobel Prize win in 1962</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img alt="RDPD" class="card-img-top" src="https://notevenpast.org/wp-content/uploads/2011/11/p2i_book.jpg">
+            <div class="card-body">
+              <div>
+                <h5 class="card-title">A Passage to India</h5><h6 class="card-author font-bold mb-3">(E.A Forster<a class="card-published ml-2">1924)</a></h6>
+                <p class="card-text">E. M. Forster’s A Passage to India, published in 1924, tells a story of the power
+                  of
+                  colonialism, the tension between spirituality and morality, and the inescapability of evil. Forster
+                  wrote this novel after traveling to India in 1912 and volunteering in Egypt during World War I.</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!--Start from here-->
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img class="card-img-top" src="https://m.media-amazon.com/images/I/310MEoDkSTL.jpg" />
+            <div class="card-body">
+              <div>
+                <h5 class="card-title">Unlocked: The Power of You - “A must-read for anyone who wants to unleash their
+                  full potential.”</h5><h6 class="card-author font-bold mb-3">(Gezim Gashi<a class="card-published ml-2">2004)</a></h6>
+                <p class="card-text">“Unlocked: The Power of You is a must read for any professional to truly unleash
+                  hidden potential.
+                  Written in clear, easily understandable language, and extremely important to provide hope for a better
+                  future through all of our individual strength.”.</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img class="card-img-top" src="https://m.media-amazon.com/images/I/91nTClkODkL.jpg" />
+            <div class="card-body">
+              <h5 class="card-title"> for Alaska</h5><h6 class="card-author font-bold mb-3">(John Green<a class="card-published ml-2">1974)</a></h6>
+              <p class="card-text">Looking for Alaska deals with the universal questions of love, friendship, truth, and
+                the gray areas in between.
+                This story is about Miles,
+                who attempts to reinvent himself in a new school,
+                with new friends and activities, and how his meeting with Alaska Young,
+                a witty and carefree girl, changed his life.</p>
+
+            </div>
+          </div>
+        </div>
+        <!--Ends here-->
+      </div>
+    </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <script src="/index.js">
+  </script>
+
+
+</body>
+
+<script>
+  $(window).on('load', function () {
+    $('#loading').hide();
+  }) 
+</script>
+
+</html>
